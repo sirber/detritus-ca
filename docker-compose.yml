@@ -1,0 +1,7 @@
+services:
+  cms:
+    image: ghcr.io/sirber/tiny-cms:latest
+    volumes:
+      - ./site:/app/data/user_content:ro
+    ports:
+      - "8080:80"
