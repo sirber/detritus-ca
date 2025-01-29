@@ -1,6 +1,7 @@
 services:
   cms:
     image: ghcr.io/sirber/tiny-cms:latest
+    restart: always
     volumes:
       - ./site:/app/data/user_content:ro
     ports:
